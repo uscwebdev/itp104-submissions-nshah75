@@ -21,13 +21,60 @@
 			height: 50px;
 			line-height: 50px;
 		}
+            #container {
+                width:800px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            #section2column1 {
+                float: left;
+                margin-right: 20px;
+            }
+
+            #section2column2 {
+                float: right;
+                margin-left: 20px;
+            }
+            
+            .clearfloat {
+                clear:both;
+            }
+
+            #section2 {
+                display: flex;
+                width: 800px;
+            }
+
+            #section3 {
+                display: flex;
+                width: 800px;
+            }
+
+            #section3column1 {
+                float: left;
+                margin-right: 20px;
+            }
+
+            #section3column2 {
+                float: right;
+                margin-left: 150px;
+            }
+
+            
         </style>
 </head>
 <body>
-
+<div id="container">
     <h1>Neil Shah</h1>
 
     <p><a href="mailto:nshah318@usc.edu">nshah318@usc.edu</a>.</p>
+
+    <hr>
+
+    <div id="section2">
+
+    <div id="section2column1">
 
     <p> Favorite color: <strong>bolded</strong>.</p>
 
@@ -37,6 +84,10 @@
 
     <img src="https://www.ncaa.org/images/2023/3/30/MBB-WBB_BallHoop.JPG" alt="Basketball">
 
+    </div>
+   
+    <div id="section2column2">
+    
     <p>Fall 2023 Schedule:</p>
 
     <ul>
@@ -47,8 +98,18 @@
         <li>REL 137: Introduction to Islam</li>
     </ul>
 
+    </div>
+
+    </div>
+
+    <div class="clearfloat"></div>
+
     <hr>
 
+    <div id="section3">
+
+    <div id="section3column1">
+    
     <p>Assignments:</p>
 
     <ul>
@@ -56,13 +117,20 @@
         <li><a target="_blank" href="assignment_02/assignment_02.html">Assignment 2: Interests Page</a></li>
     </ul>
 
+    </div>
+
+    <div id="section3column2">
+
     <p>Labs:</p>
 
     <ul>
         <li><a target="_blank" href="index.html">Lab 2: Student Page</a></li>
         <li><a target="_blank" href="lab_03/lab_03.html">Lab 3: Updated Resume</a></li>
-
+        <li><a target="_blank" href="index.html">Lab 4: Updated Student Page</a></li>
     </ul>
+    </div>
 
+    </div>
+</div>
 </body>
 </html>
