@@ -22,14 +22,29 @@
         }
 
         #main {
-            width: 900px;
-            margin-left: auto;
-            margin-right: auto;
-            padding: 10px;
+            width: 600px;
+            padding: 15px;
             background-color: grey;
             color: white;
             overflow: auto;
+            border-left: 1px solid #000;
+			border-right: 1px solid #000;
+        }
 
+        #sidebar {
+            background-color: lightgray;
+            width: 150px;
+            padding: 15px;
+            border-right: 1px solid #000;
+        }
+
+        #wrapper {
+            background-color: yellow;
+            display: flex;
+            width: 813px;
+            margin-left: auto;
+            margin-right: auto;
+            justify-content: center;
         }
 
         h1 {
@@ -69,6 +84,12 @@
             text-align: center;
 		}
 
+        #sidebar img{
+            width: 100%;
+            height: auto;
+            margin-top: 15px;
+        }
+
 
     </style>
 </head>
@@ -76,6 +97,8 @@
     <div id="header">
 		<h1>Chess</h1>
 	</div>
+
+    <div id="wrapper">
 
     <div id="main">
         
@@ -95,7 +118,19 @@
 
         <img id="love" src="img/phpy2Whdd.jpg" alt="my_love">
         
-        <p>The allure of chess lies not just in its competitive nature, but in the cerebral dance of strategy and counter-strategy, playing out across 64 squares. Every move, every piece, and every strategy echoes life's broader lessons about patience, foresight, and resilience. Beyond the challenge of outthinking an opponent, chess offers a timeless connection to a rich tapestry of global history and culture. For me, it's more than a game; it's a mental gymnasium and a canvas upon which countless stories of conquest, defeat, and redemption are painted.</p>
+        <p>The allure of chess lies not just in its competitive nature, but in the cerebral dance of strategy and counter-strategy, playing out across 64 squares. Every move, every piece, and every strategy echoes life's broader lessons about patience, foresight, and resilience. Beyond the challenge of outthinking an opponent, chess offers a timeless connection to a rich tapestry of global history and culture. For me, it's more than a game; it's a mental gymnasium and a canvas upon which countless stories of conquest, defeat, and redemption are painted. Chess is a captivating dance of the mind, where strategy and creativity intertwine seamlessly. Every move tells a story, offering a glimpse into the player's thought process and depth of understanding. The timeless elegance of the board and pieces holds an aesthetic appeal, while the game's rich history offers layers of intrigue. Each match is a journey of unexpected turns, challenging one's patience, foresight, and resilience. The joy of outthinking an opponent and the lessons learned from both victory and defeat are what make chess an endlessly enchanting game.</p>
+
+    </div>
+
+    <div id="sidebar">
+        <h3><em>Iconic players:</em></h3>
+        <img src="img/BobbyFischer400x400_7.jpg" alt="bobbyfischer">
+        <p><em>Bobby Fischer, 11-time world champion</em></p>
+        <img src="img/Kasparov-Crop.jpg" alt="garykasparov">
+        <p><em>Gary Kasparov, 6-time world champion</em></p>
+        <img src="img/GS1jjuXF_400x400.jpg" alt="hikaru">
+        <p><em>Hikaru Nakamura, biggest streamer in the world</em></p>
+    </div>
 
     </div>
 
