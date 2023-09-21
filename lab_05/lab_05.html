@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>User Information and Preferences Form</title>
+        <style>
+            h1 {
+                text-align: center;
+            }
+
+            #wrapper {
+                width: 800px;
+                margin-left: auto;
+                margin-right: auto;
+                justify-content: center;
+                padding: 10px;
+            }
+
+            .form-row {
+			margin: 10px 0px;
+			display: flex;
+		    }
+
+            #name-id {
+                width: 500px;
+            }
+
+            #email-id {
+                width: 500px;
+            }
+
+            .left-col {
+			    width: 100px;
+                padding-right: 80px;
+                text-align: right;
+		    }
+
+            #phone-id {
+                width: 500px;
+            }
+
+            #country-id {
+                width: 508px;
+            }
+
+            #comment-id {
+                width: 502px;
+            }
+
+            #acceptid {
+            }
+
+            #final-id {
+                flex-direction: column;
+            }
+
+            button {
+                padding: 10px 20px;
+                font-size: 16px;
+                margin-top: 15px;
+                cursor: pointer;
+            }
+
+            #submit-id {
+                background-color: maroon;
+                color: white;
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <div id="wrapper">
+
+            <div id="header">
+                <h1>User Information and Preferences Form</h1>
+            </div>
+
+            <form action="confirmation.html">
+                <div class="form-row">
+                    <div class="left-col">
+                        <label for="name-id">Name:</label>
+                    </div>
+                    <input type="text" id="name-id" placeholder="Tommy Trojan">
+                </div>
+    
+                <div class="form-row">
+                    <div class="left-col">
+                        <label for="email-id">Email:</label>
+                    </div>
+                    <input type="email" id="email-id" placeholder="ttrojan@usc.edu">
+                </div>
+
+                <div class="form-row">
+                    <div class="left-col">
+                        <label for="phone-id">Phone:</label>
+                    </div>
+                    <input type="tel" id="phone-id" placeholder="(999)-999-9999">
+                </div>
+
+                <div class="form-row">
+                    <div class="left-col">
+                        <label>Gender:</label>
+                    </div>
+
+                    <label>
+                        <input type="radio" name="student">
+                        Male
+                    </label>
+
+                    <label>
+                        <input type="radio" name="student">
+                        Female
+                    </label>
+
+                    <label>
+                        <input type="radio" name="student">
+                        Other
+                    </label>
+                </div>
+    
+                <div class="form-row">
+                    <div class="left-col">
+                        <label>Interests:</label>
+                    </div>
+
+                    <label>
+                        <input type="checkbox" name="interest">
+                        Movies
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="interest">
+                        Sports
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="interest">
+                        Music
+                    </label>
+                </div>
+    
+                <div class="form-row">
+                    <div class="left-col">  
+                        <label for="country-id">Country:</label>
+                    </div>  
+    
+                    <select id="country-id">
+                        <option>USA</option>
+                        <option>Canada</option>
+                        <option>UK</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+    
+                <div class="form-row">
+                    <div class="left-col">
+                        <label for="comment-id">Comment:</label>
+                    </div>
+                    <div class="final-id">
+                        <textarea id="comment-id" placeholder="Any feedback or comments..."></textarea>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="left-col">
+                    </div>
+                    <div>
+                        <input type="checkbox" id="accept-id" name="accept" required>
+                        <label for="accept-id">I accept the Terms & Conditions</label>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="left-col">
+
+                    </div>
+                    <div>
+                    <button id="submit-id" type="submit">Submit</button>
+                    <button id="clear-id" type="reset">Clear</button>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </body>
+</html>
