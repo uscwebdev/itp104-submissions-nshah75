@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Calendar</title>
+
+    <style>
+
+        #header {
+            background-image: url(img/pexels-pixabay-206359.jpg);
+			height: 300px;
+            text-align: center;
+            line-height: 300px;
+            background-size: cover;
+            background-position: center;
+            color: #FFF;
+            text-shadow: 0px 0px 10px #000;
+            width: 900px;
+        }
+
+        #main {
+            width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+            color: black;
+            overflow: auto;
+
+        }
+
+        body {
+            background-color: lightblue;
+        }
+
+        th {
+			border: 1px solid black;
+			text-align: center;
+
+			/* 
+				width of #main = 900px
+				# of cells = 7
+				width of borders = 7px * 5 = 35px
+
+				900px - 35px = 865px for 7 cells left
+				865px / 7 = 148.75px per cell
+
+				Note: browsers will round fractions.
+				Some browsers will round to the nearest integer.
+				Some browsers will truncate - ignore whatever comes
+				after the period.
+			*/
+			width: 128px;
+			padding: 10px 0px;
+            background-color: orange;
+
+		}
+
+        td {
+			border: 1px solid black;
+			text-align: center;
+			width: 128px;
+			padding: 10px 0px;
+            height: 100px;
+            background-color: lightsalmon;
+		}
+
+		table {
+			border-collapse: collapse;
+		}
+
+        .october {
+            text-align: right;
+            vertical-align: top;
+            color: rgb(118, 114, 114);
+            text-shadow: 0px 0px 20px black;
+            padding-right: 5px;
+            padding-top: 5px;
+        }
+
+        .november {
+            text-align: right;
+            vertical-align: top;
+            color: black;
+            text-shadow: 0px 0px 20px black;
+            padding-right: 5px;
+            padding-top: 5px;
+        }
+
+        #bday {
+            background-image: url(img/Birthday_cake_\(8973445388\)_\(cropped\).jpg);
+            background-size: cover;
+            color: white;
+        }
+
+        #bday h4{
+            background-color: rgb(56, 133, 174);
+            text-align: center;
+            vertical-align: middle;
+            border-radius: 15px;
+            color: white;
+            margin-left: 5px;
+        }
+
+        #thanksgiving {
+            background-image: url(img/thanksgiving-hero.jpg);
+            background-size: cover;
+            color: white;
+        }
+
+        #thanksgiving h4{
+            background-color: rgb(56, 133, 174);
+            text-align: center;
+            vertical-align: middle;
+            border-radius: 15px;
+            color: white;
+            margin-left: 5px;
+        }
+
+        #veteran {
+            background-image: url(img/download.jpg);
+            background-size: cover;
+            color: white;
+        }
+
+        #veteran h4{
+            background-color: rgb(56, 133, 174);
+            text-align: center;
+            vertical-align: middle;
+            border-radius: 15px;
+            color: white;
+            margin-left: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="main">
+
+        <div id="header">
+            <h1>November 2023</h1>
+        </div>
+
+        <table>
+			<tr>
+				<th>Sun</th>
+				<th>Mon</th>
+				<th>Tues</th>
+				<th>Wed</th>
+                <th>Thurs</th>
+                <th>Fri</th>
+                <th>Sat</th>
+			</tr>
+
+			<tr>
+				<td class="october"><strong>29</strong></td>
+				<td class="october"><strong>30</strong></td>
+				<td class="october"><strong>31</strong></td>
+				<td class="november"><strong>1</strong></td>
+				<td class="november"><strong>2</strong></td>
+				<td class="november"><strong>3</strong></td>
+				<td class="november"><strong>4</strong></td>
+			</tr>
+
+			<tr>
+				<td class="november"><strong>5</strong></td>
+				<td class="november"><strong>6</strong></td>
+				<td class="november"><strong>7</strong></td>
+				<td class="november"><strong>8</strong></td>
+				<td class="november"><strong>9</strong></td>
+				<td class="november"><strong>10</strong></td>
+				<td id="veteran" class="november">
+                    <strong>11</strong>
+                    <h4>Veteran's Day!</h4>
+                </td>
+			</tr>
+
+            <tr>
+				<td class="november"><strong>12</strong></td>
+				<td class="november"><strong>13</strong></td>
+				<td class="november"><strong>14</strong></td>
+				<td class="november"><strong>15</strong></td>
+				<td class="november"><strong>16</strong></td>
+				<td class="november"><strong>17</strong></td>
+				<td class="november"><strong>18</strong></td>
+			</tr>
+
+            <tr>
+				<td class="november"><strong>19</strong></td>
+				<td class="november"><strong>20</strong></td>
+				<td class="november"><strong>21</strong></td>
+				<td class="november"><strong>22</strong></td>
+				<td id="thanksgiving" class="november">
+                    <strong>23</strong>
+                    <h4>Thanksgiving!</h4>
+                </td>
+				<td id="bday" class="november">
+                    <strong>24</strong>
+                    <h4>My birthday!</h4>
+                </td>
+				<td class="november"><strong>25</strong></td>
+			</tr>
+
+            <tr>
+				<td class="november"><strong>26</strong></td>
+				<td class="november"><strong>27</strong></td>
+				<td class="november"><strong>28</strong></td>
+				<td class="november"><strong>29</strong></td>
+				<td class="november"><strong>30</strong></td>
+				<td class="october"><strong>1</strong></td>
+				<td class="october"><strong>2</strong></td>
+			</tr>
+		</table>
+
+    </div>
+</body>
+</html>
