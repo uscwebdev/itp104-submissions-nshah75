@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Chess</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Josefin+Sans:wght@100;400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="main.css">
+    
+    <style>
+
+        h3 {
+            font-family: 'Josefin Sans', sans-serif;
+            font-weight: bolder;
+        }
+        
+        #header {
+            background-image: url(img/17623.87bb05cd.668x375o.47d81802f1eb@2x.jpg);
+			height: 300px;
+            text-align: center;
+            line-height: 300px;
+            background-size: cover;
+            background-position: center;
+            color: #FFF;
+            text-shadow: 0px 0px 10px #000;
+        }
+
+        #sidebar {
+            background-color: lightgray;
+            width: 150px;
+            padding: 15px;
+            border-right: 1px solid #000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            margin: 0px;
+        }
+
+        #history {
+            float: right;
+            margin-left: 10px;
+            width: 150px;
+        }
+
+        #best {
+            float: left;
+            margin-right: 10px;
+            width: 150px;
+        }
+
+        #love {
+            float: right;
+            margin-left: 10px;
+            width: 150px;
+        }
+
+        #chess {
+            float: left;
+            margin-right: 10px;
+            width: 150px;
+        }
+
+        #sidebar img{
+            width: 100%;
+            height: auto;
+            margin-top: 15px;
+        }
+
+        #sidebar {
+			display: flex;
+			align-items: baseline;
+		}
+		.thumbnail {
+			width: 140px;
+			height: auto;
+			opacity: 0.7;
+            margin-right: 10px;
+		}
+
+		.thumbnail:hover {
+			opacity: 1.0;
+
+		}
+
+		.img-container > p {
+			text-align: center;
+			visibility: hidden;
+		}
+
+		.thumbnail:hover + p {
+			visibility: visible;
+		}
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            width: 150px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 0px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="header">
+		<h1>Chess</h1>
+	</div>
+
+    <div id="navbar">
+        <div class="dropdown">
+            <a id="highlight-nav" href="assignment_06.html">Home</a>
+            <div class="dropdown-content">
+                <a href="#historyhead">History of Chess</a>
+                <a href="#worldhead">World's Best Players</a>
+                <a href="#myhead">My Love for the Game</a>
+             </div>
+        </div>
+        <a href="gallery.html">Gallery</a>
+    </div>
+
+
+    <div id="wrapper">
+
+    <div id="main">
+        
+        <h1 id="historyhead"><strong>History of Chess:</strong></h1>
+
+        <img id="history" src="img/bce6da0352.jpg" alt="history_logo">
+
+        <p><a target="_blank" href="https://en.wikipedia.org/wiki/History_of_chess">Chess</a>, often referred to as the "game of kings," has its roots in ancient India where it was known as "Chaturanga," meaning "four divisions of the military" – infantry, cavalry, elephants, and chariotry. By the time it reached Persia, the game became known as "Shatranj," and with the Muslim conquest of Persia, chess spread to the Islamic world. From there, it traveled to Europe, evolving along the way, leading to the modern form we recognize today.</p>
+
+        <h1 id="worldhead"><strong>World's Best Players:</strong></h1>
+
+        <img id="best" src="img/ap21344477319182_custom-32c06406f279c69d5e853bc30649315b43e5cc19-s1100-c50.jpg" alt="worlds_best">
+        
+        <p>Throughout history, the world of chess has been graced by prodigious talents and iconic figures. From the strategic mastery of José Raúl Capablanca and the brilliance of Bobby Fischer to the unparalleled consistency of Anatoly Karpov. However, the modern era is dominated by Grandmaster Magnus Carlsen, the Norwegian prodigy who has held the World Chess Championship title since 2013. He, along with other notable players like Viswanathan Anand, Garry Kasparov, and Judit Polgár, have left indelible marks on the chess world, pushing the boundaries of strategic play and elevating the game's global prestige.</p>
+        
+        <h1 id="myhead"><strong>My Love for the Game:</strong></h1>
+
+        <img id="love" src="img/phpy2Whdd.jpg" alt="my_love">
+        
+        <p>The allure of chess lies not just in its competitive nature, but in the cerebral dance of strategy and counter-strategy, playing out across 64 squares. Every move, every piece, and every strategy echoes life's broader lessons about patience, foresight, and resilience. Beyond the challenge of outthinking an opponent, chess offers a timeless connection to a rich tapestry of global history and culture. For me, it's more than a game; it's a mental gymnasium and a canvas upon which countless stories of conquest, defeat, and redemption are painted. Chess is a captivating dance of the mind, where strategy and creativity intertwine seamlessly. Every move tells a story, offering a glimpse into the player's thought process and depth of understanding. The timeless elegance of the board and pieces holds an aesthetic appeal, while the game's rich history offers layers of intrigue. Each match is a journey of unexpected turns, challenging one's patience, foresight, and resilience. The joy of outthinking an opponent and the lessons learned from both victory and defeat are what make chess an endlessly enchanting game.</p>
+
+    </div>
+
+    <div id="sidebar">
+        <h3><em><strong>Iconic players:</strong></em></h3>
+        
+        <div class="img-container">
+        <img class="thumbnail" src="img/BobbyFischer400x400_7.jpg" alt="bobbyfischer">
+        <p><em>Bobby Fischer, 11-time world champion</em></p>
+        </div>
+
+        <div class="img-container">
+        <img class="thumbnail" src="img/Kasparov-Crop.jpg" alt="garykasparov">
+        <p><em>Gary Kasparov, 6-time world champion</em></p>
+        </div>
+
+        <div class="img-container">
+        <img class="thumbnail" src="img/GS1jjuXF_400x400.jpg" alt="hikaru">
+        <p><em>Hikaru Nakamura, biggest streamer in the world</em></p>
+        </div>
+    </div>
+
+    </div>
+
+    <div id="footer">
+        University of Southern California &copy; 2023
+    </div>
+
+
+</body>
+</html>
+   

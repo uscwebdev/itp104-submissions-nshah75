@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Gallery</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Josefin+Sans:wght@100;400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="main.css">
+
+    <style>
+        
+        #header {
+            background-image: url(img/unnamed.png);
+			height: 200px;
+            text-align: center;
+            line-height: 200px;
+            background-size: cover;
+            background-position: top;
+            color: #FFF;
+            text-shadow: 0px 0px 10px #000;
+        }
+
+        #wrapper {
+            width: 773px;
+            padding: 20px;
+            margin: 0 auto;
+            background-color: #777;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .general-box {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .general-box2 {
+            flex-wrap: wrap;
+        }
+
+        .general-box2-group {
+            width: 340px;
+            height: auto;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;            
+        }
+
+        #container-1 {
+            width: 340px;
+            height: 150px;
+            border: 1px solid #000;
+            margin-bottom: 20px;
+        }
+
+        #container-2 {
+            width: 192.5px;
+            height: 150px;
+            border: 1px solid #000;
+        }
+
+        #container-3 {
+            width: 192.5px;
+            height: 150px;
+            border: 1px solid #000;
+        }
+
+        #container-4 {
+            width: 160px;
+            height: 150px;
+            border: 1px solid #000;
+            margin-right: 18px;
+            margin-bottom: 20px;
+        }
+
+        #container-6 {
+            width: 408px;
+            height: 322px;
+            border: 1px solid #000;
+        }
+
+        
+       #container-5, #container-7, #container-8{
+            width: 158px;
+            height: 150px;
+            border: 1px solid #000;
+        }
+
+        #container-9 {
+            width: 556.5px;
+            height: 150px;
+            border: 1px solid #000;
+        }
+
+        #container-7 {
+            margin-right: 20px;
+            margin-bottom: 20px;
+        }
+
+        #container-10 {
+            width: 192.5px;
+            height: 150px;
+            border: 1px solid #000;
+        }
+        
+        #container-1, #container-2, #container-3, #container-4, #container-5, #container-6, #container-7, #container-8, #container-9, #container-10 {
+            background-color: rgb(176, 175, 175);
+            position: relative;
+            overflow: hidden;
+        }
+
+        #container-6 > .overlay {
+            padding-top: 162px;
+        }
+        
+        .overlay {
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			right: 0px;
+			bottom: 0px;
+            font-family: 'Josefin Sans', sans-serif;
+
+			/* background-color: #000; */
+			background-color: rgba(0, 0, 0, 0.6);
+			color: #FFF;
+			text-align: center;
+
+			padding-top: 76px;
+
+			visibility: hidden;
+
+			/* display: flex;
+			align-items: center;
+			justify-content: center; */
+		}
+
+		#container-1:hover > .overlay {
+			visibility: visible;
+		}
+
+        #container-2:hover > .overlay {
+			visibility: visible;
+		}
+
+        #container-3:hover > .overlay {
+			visibility: visible;
+		}
+
+        #container-4:hover > .overlay {
+			visibility: visible;
+		}
+
+        #container-5:hover > .overlay {
+			visibility: visible;
+		}
+
+        #container-6:hover > .overlay {
+			visibility: visible;
+		}
+
+        #container-7:hover > .overlay {
+			visibility: visible;
+		}
+
+        #container-8:hover > .overlay {
+			visibility: visible;
+		}
+
+        #container-9:hover > .overlay {
+			visibility: visible;
+		}
+
+        #container-10:hover > .overlay {
+			visibility: visible;
+		}
+
+        #container-1 > .width-100 {
+			width: 100%;
+			height: auto;
+		}
+
+        #container-2 > img {
+			width: auto;
+			height: 100%;
+		}
+
+        #container-3 > img {
+			width: auto;
+			height: 100%;
+            position: relative;
+            right: 50px;
+		}
+
+        #container-4 > .width-100 {
+			width: 100%;
+			height: auto;
+		}
+
+        #container-5 > img {
+			width: 100%;
+			height: auto;
+		}
+
+        #container-6 > img {
+			width: auto;
+			height: 100%;
+		}
+
+        #container-7 > img {
+			width: auto;
+			height: 100%;
+		}
+
+        #container-8 > img {
+			width: auto;
+			height: 100%;
+		}
+
+        #container-9 > img {
+			width: 100%;
+			height: auto;
+            position: relative;
+            bottom: 25px;
+		}
+
+        #container-10 > img {
+			width: auto;
+			height: 100%;
+		}
+
+        #title {
+            display: flex;
+            width: 700px;
+            margin-bottom: 10px;
+        }
+        
+
+    </style>
+</head>
+<body>
+
+    <div id="header">
+		<h1>Gallery</h1>
+	</div>
+
+    <div id="navbar">
+		<a href="assignment_06.html">Home</a>
+		<a id="highlight-nav" href="gallery.html">Gallery</a>
+	</div>
+
+
+    <div id="wrapper">
+        <div id="title">
+            <h1><strong>Chess Snapshots</strong></h1>
+        </div>
+        <div class="general-box">
+            <div id="container-1">
+                <img class="width-100" src="img/gallery/1.jpg" alt="Magnus Carlsen">
+                <div class="overlay">Magnus Carlsen vs Fabiano Caruana</div>
+            </div>
+        </div>
+
+        <div class="general-box">
+            <div id="container-2">
+                <img src="img/gallery/2.png" alt="MVL">
+                <div class="overlay">Maxime Vachier-Lagrave</div>
+            </div>
+        </div>
+
+        <div class="general-box">
+            <div id="container-3">
+                <img src="img/gallery/3.jpg" alt="Anish Giri">
+                <div class="overlay">Anish Giri</div>
+            </div>
+        </div>
+
+        <div class="general-box2-group">
+            <div class="general-box2">
+                <div id="container-4">
+                    <img class="width-100" src="img/gallery/4.jpg" alt="Fabi">
+                    <div class="overlay">Fabiano Caruana</div>
+                </div>
+            </div>
+
+            <div class="general-box2">
+                <div id="container-5">
+                    <img src="img/gallery/5.jpg" alt="Ding">
+                    <div class="overlay">Ding Liren</div>
+                </div>
+            </div>
+
+            <div class="general-box2">
+                <div id="container-7">
+                    <img src="img/gallery/7.jpg" alt="Ian">
+                    <div class="overlay">Ian Nepomniachtchi</div>
+                </div>
+            </div>
+
+            <div class="general-box2">
+                <div id="container-8">
+                    <img src="img/gallery/8.jpg" alt="Ding">
+                    <div class="overlay">Ding Liren</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="general-box">
+            <div id="container-6">
+                <img src="img/gallery/6.jpg" alt="Magnus">
+                <div class="overlay">Magnus Carlsen</div>
+            </div>
+        </div>
+
+        <div class="general-box">
+            <div id="container-9">
+                <img src="img/gallery/9.jpg" alt="FIDE">
+                <div class="overlay">FIDE x Chess.com</div>
+            </div>
+        </div>
+
+        <div class="general-box">
+            <div id="container-10">
+                <img src="img/gallery/10.jpg" alt="Wesley">
+                <div class="overlay">Wesley So</div>
+            </div>
+        </div>
+
+
+        
+    </div>
+    
+    <div id="footer">
+        University of Southern California &copy; 2023
+    </div>
+</body>
+</html> 

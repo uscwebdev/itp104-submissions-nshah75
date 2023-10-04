@@ -1,0 +1,81 @@
+@font-face {
+    src: url(fonts/Chocolate_Covered_Raindrops.ttf);
+    font-family: "Chocolate Covered Raindrops";
+}
+
+h1 {
+    font-family: 'Chocolate Covered Raindrops', cursive;
+    font-size: 2.5em;
+    font-weight: normal;
+}
+
+#header > h1 {
+    font-size: 9em;
+}
+
+body {
+    background-color: lightyellow;
+    margin: 0px;
+    padding: 0px;
+}
+
+h1 {
+    margin: 0px;
+}
+
+#main {
+    width: 600px;
+    padding: 15px;
+    background-color: grey;
+    color: white;
+    overflow: auto;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+}
+
+
+#wrapper {
+    display: flex;
+    width: 813px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+
+#footer {
+    background-color: black;
+    text-align: center;
+    color: #FFF;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+
+#navbar a {
+    text-decoration: none;
+    /* 
+        600px / 4 = 150px per menu option
+    */
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+
+    text-align: center;
+
+    display: block;
+
+    color: rgb(98, 63, 19);
+
+
+}
+
+#navbar {
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 3px 5px #777;
+}
+
+#navbar a:hover, #navbar #highlight-nav {
+    color: rgb(98, 63, 19);
+    border-bottom: 2px solid rgb(98, 63, 19);
+}
