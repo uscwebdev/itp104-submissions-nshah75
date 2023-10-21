@@ -3,6 +3,10 @@
 <head>
         <title> Neil Shah | Student Page </title>
 
+        <meta charset="utf-8">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
         <style>
             strong {
                 color: orange;
@@ -61,7 +65,40 @@
                 margin-left: 61px;
             }
 
-            
+            @media (max-width:767px){
+                #container {
+                    margin: 10px;
+                    width: auto;
+                }
+                
+                #section2, #section3 {
+                    flex-direction: column;
+                    width: auto;
+                }
+
+                #section2column1 {
+                    margin-right: 0px;
+                }
+
+                #section2column1 img {
+                    width: 100%;
+                    height: auto;
+                    justify-content: center;
+                }
+
+                #section2column2 {
+                    margin-left: 0px;
+                }
+
+                #section3column1 {
+                    margin-right: 0px;
+                }
+
+                #section3column2 {
+                    margin-left: 0px;
+                }
+            }
+
         </style>
 </head>
 <body>
@@ -82,7 +119,7 @@
 
     <p>Favorite activity:</p>
 
-    <img src="https://www.ncaa.org/images/2023/3/30/MBB-WBB_BallHoop.JPG" alt="Basketball">
+    <img src="student_page.jpg" alt="Basketball">
 
     </div>
    
@@ -134,6 +171,7 @@
         <li><a target="_blank" href="lab_05/lab_05.html">Lab 5: Form Page</a></li>
         <li><a target="_blank" href="lab_06/lab_06.html">Lab 6: Simple Photo Gallery</a></li>
         <li><a target="_blank" href="lab_07/lab_07.html">Lab 7: Image Puzzle</a></li>
+        <li><a target="_blank" href="index.html">Lab 8: Responsive Student Page</a></li>
     </ul>
     </div>
 
