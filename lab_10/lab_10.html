@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Effects</title>
+    <style>
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color:black;
+}
+
+h1 {
+    text-align: center;
+    background-color: lightblue; 
+    width: 100%;
+    padding: 20px 0; 
+    margin: 0 0 20px 0; 
+    box-sizing: border-box; 
+}
+
+.photo-gallery {
+    position: relative;
+    width: 900px; 
+    height: 600px; 
+    overflow: hidden;
+}
+
+.photo-gallery .photo {
+    position: absolute;
+    width: auto; 
+    height: 300px; 
+    transition: transform 0.5s ease;
+    top: 0;
+}
+
+
+.photo-gallery .photo:nth-child(1) {
+    z-index: 3;
+    transform: translateX(0);
+}
+
+.photo-gallery .photo:nth-child(2) {
+    z-index: 2;
+    transform: translateX(50px); 
+}
+
+.photo-gallery .photo:nth-child(3) {
+    z-index: 1;
+    transform: translateX(100px); 
+}
+
+.photo-gallery:hover .photo:nth-child(1) {
+    transform: translateX(0); 
+}
+
+.photo-gallery:hover .photo:nth-child(2) {
+    transform: translateX(270px); 
+}
+
+.photo-gallery:hover .photo:nth-child(3) {
+    transform: translateX(570px); 
+}
+
+.photo-gallery .photo{
+    transition: all 1s ease 1s;
+}
+
+    </style>
+</head>
+<body>
+
+    <h1>Neil's Favorite Food</h1>
+    <div class="photo-gallery">
+        <img src="img/4d1ae4aa18c54b5321d93a4dcb7ec5d8.jpg" alt="Photo 1" class="photo" />
+        <img src="img/easy-thai-recipes-for-beginners.jpg" alt="Photo 2" class="photo" id="photo2"/>
+        <img src="img/Screen_Shot_2017_08_15_at_11.52.55_AM.0.0.jpg" alt="Photo 3" class="photo" />
+    </div>
+    </body>
+    </html>
