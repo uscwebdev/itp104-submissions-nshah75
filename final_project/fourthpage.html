@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSGO - Iconic Videos</title>
+    <meta name="description" content="Dive into the action with our collection of the most iconic CSGO videos. Watch and relive the moments that made history.">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<style>
+        h2 {
+            color: #EEE5E9;
+        }
+
+        h3 {
+            color: #EEE5E9;
+        }
+</style>
+<body>
+    <div class="header">
+        <div class="header-image" style="background-image: url('img/Screen\ Shot\ 2566-11-27\ at\ 19.22.10.png');">
+            <h1>A Reel of the Action</h1>
+        </div>
+    </div>
+
+    <div class="navbar">
+        <a href="homepage.html">Home</a>
+        <a href="secondpage.html">Best Players</a>
+        <a href="thirdpage.html">Best Teams</a>
+        <a class="active" href="fourthpage.html">Iconic Videos</a>
+    </div>
+
+    <div class="section" id="iconic-videos">
+        <h2>CSGO 2 Trailer:</h2>
+        <div class="video-container">
+            <iframe width="1424" height="614" src="https://www.youtube.com/embed/nSE38xjMLqE" title="Counter-Strike 2 - Launch Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+
+        <h2>CSGO 2 Casual Highlights:</h2>
+        <div class="video-container">
+            <iframe width="1424" height="614" src="https://www.youtube.com/embed/Mv_7vAtNoxc" title="EPIC SEMI FINAL! - FaZe vs Complexity - HIGHLIGHTS - BLAST Premier Fall Final 2023 l CS2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+
+        <h2>CSGO Iconic Highlights:</h2>
+        <div class="video-container">
+            <iframe width="1424" height="614" src="https://www.youtube.com/embed/fNqY5KGAcU4" title="This Will Give You Goosebumps! Legendary &amp; Iconic Pro Plays That Define CS:GO" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+
+        <h2>My favorite highlight:</h2>
+        <div class="video-container">
+            <iframe width="1424" height="614" src="https://www.youtube.com/embed/fNqY5KGAcU4" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <!-- ... -->
+    
+    <script>
+    $(document).ready(function(){
+      // Apply smooth scroll to all anchors
+      $('a[href*="#"]').on('click', function(e) {
+        e.preventDefault();
+
+        $('html, body').animate({
+          scrollTop: $($(this).attr('href')).offset().top,
+        }, 500, 'linear');
+      });
+    });
+    </script>
+</body>
+</html>

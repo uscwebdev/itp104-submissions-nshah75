@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Simple Photo Gallery</title>
+        <style>
+            #main {
+                width: 600px;
+                margin-left: auto;
+                margin-right: auto;
+                padding: 10px;
+                padding-bottom: 50px;
+                text-align: center;
+                border: 1pt solid #000;
+                background-color: antiquewhite;
+            }
+            .thumbnail {
+                width: 240px;
+                height: auto;
+                margin: 5px;
+                opacity: 0.7;
+            }
+            .thumbnail:hover {
+                opacity: 1.0;
+            }
+            .img-container > p {
+                text-align: center;
+                visibility: hidden;
+            }
+            .thumbnail:hover + p {
+                visibility: visible;
+            }
+            .selected {
+                border: 5px solid red; /* Style for the selected image */
+            }
+        </style>
+    </head>
+    <body>
+        <div id="main">
+            <h1>Basketball Players</h1>
+            <div id="gallery">
+                <div class="img-container">
+                    <img class="thumbnail" src="img/16892703264593.jpg" alt="Stephen Curry">
+                    <p>Stephen Curry</p>
+                </div>
+        
+                <div class="img-container">
+                    <img class="thumbnail" src="img/LeBron_James_(51959977144)_(cropped2).jpg" alt="Lebron James">
+                    <p>Lebron James</p>
+                </div>
+    
+                <div class="img-container">
+                    <img class="thumbnail" src="img/Harden_James_phi_220308.jpg" alt="James Harden">
+                    <p>James Harden</p>
+                </div>
+    
+                <div class="img-container">
+                    <img class="thumbnail" src="img/Nikola_Jokic_free_throw_(cropped).jpg" alt="Nikola Jokic">
+                    <p>Nikola Jokic</p>
+                </div>
+
+                <div class="img-container">
+                    <img class="thumbnail" src="img/image-66.jpg" alt="Luka Doncic">
+                    <p>Luka Doncic</p>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            // JavaScript to handle clicks on images
+            document.querySelectorAll('.thumbnail').forEach(img => {
+                img.addEventListener('click', function() {
+                    // Remove borders from all images
+                    document.querySelectorAll('.thumbnail').forEach(otherImg => {
+                        otherImg.classList.remove('selected');
+                    });
+                    // Add border to clicked image
+                    this.classList.add('selected');
+                });
+            });
+        </script>
+    </body>
+</html>

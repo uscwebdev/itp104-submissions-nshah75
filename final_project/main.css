@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1B2A41; /* Primary Color: Background */
+    color: #A9FFF7; /* Secondary Color: Text */
+}
+
+.navbar {
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    background-color: #1B2A41; /* Primary Color: Background */
+    padding-bottom: 20px;
+}
+.navbar a {
+    display: inline-block;
+    color: #A9FFF7; /* Secondary Color: Text */
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    flex: 1;
+}
+.navbar a:hover {
+    background-color: #EEE5E9;
+    color: black;
+}
+.navbar a.active {
+    background-color: #4CAF50; /* Highlight for active page */
+    color: #EEE5E9;
+}
+.header {
+    position: relative;
+    text-align: center;
+    color: #EEE5E9; /* Tertiary Color: Heading */
+}
+.header-image {
+    width: 100%;
+    height: 450px; /* Adjust as necessary */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-text {
+    position: absolute;
+    width: 100%;
+    text-shadow: 2px 2px 4px #000000; /* Shadow to make text stand out */
+}
+.header h1, .header h2 {
+    margin: 0;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for readability */
+    display: inline-block;
+    padding: 0.5em 1em; /* Padding around text */
+}
+
+.section-content {
+    flex: 1;
+    margin: 10px;
+}
+
+.image-placeholder {
+    flex-basis: 50%; 
+    height: auto; 
+    background-color: #ddd; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.image-placeholder img {
+    width: 100%; /* Adjust width as necessary */
+    height: auto; /* Maximum height for the image */
+    margin-bottom: 10px; /* Spacing between image and text */
+}
+
+.section:nth-child(even) .image-placeholder {
+    margin-right: auto;
+}
+.section-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #EEE5E9; 
+}
+.source {
+    font-style: italic;
+    color: #A9FFF7; 
+}
+.numbers {
+    color: #FCCA46; 
+}
+
+.section-content a {
+    color: #A9FFF7;
+    font-style: italic;
+}

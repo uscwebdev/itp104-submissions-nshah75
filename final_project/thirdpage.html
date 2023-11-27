@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSGO - Best Teams</title>
+    <meta name="description" content="Showcasing the top competitive CSGO teams. Discover the tactics and teamplay that define the best in esports.">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        .image-row {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .image-row img {
+            width: 18%; /* Adjust the width as necessary, this assumes 5 images taking up equal space */
+            height: auto; /* Maintain aspect ratio */
+            object-fit: contain;
+        }
+
+        h2 {
+            color: #EEE5E9;
+        }
+
+        h3 {
+            color: #EEE5E9;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="header-image" style="background-image: url('img/13-Teams.jpg');">
+            <div class="header-text">
+                <h1>Teamwork Makes the Dream Work</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="navbar">
+        <a href="homepage.html">Home</a>
+        <a href="secondpage.html">Best Players</a>
+        <a class="active" href="thirdpage.html">Best Teams</a>
+        <a href="fourthpage.html">Iconic Videos</a>
+    </div>
+
+    <!-- Best Teams Section -->
+    <div class="section">
+        <h2>Top 3 Best Teams:</h2>
+        <!-- Team 1 -->
+        <div class="team-info">
+            <h3>1. Faze Clan</h3>
+            <div class="image-row">
+                <img src="img/broky.avif" alt="Team 1 Photo 1">
+                <img src="img/rain.avif" alt="Team 1 Photo 2">
+                <img src="img/twistz.avif" alt="Team 1 Photo 3">
+                <img src="img/ropz.avif" alt="Team 1 Photo 4">
+                <img src="img/karrigan.avif" alt="Team 1 Photo 5">
+            </div>
+        </div>
+
+        <div class="team-info">
+            <h3>2. Team Vitality</h3>
+            <div class="image-row">
+                <img src="img/apex.avif" alt="Team 1 Photo 1">
+                <img src="img/mezzi.avif" alt="Team 1 Photo 2">
+                <img src="img/flamez.avif" alt="Team 1 Photo 3">
+                <img src="img/spinx.avif" alt="Team 1 Photo 4">
+                <img src="img/zywoo.avif" alt="Team 1 Photo 5">
+            </div>
+        </div>
+
+        <div class="team-info">
+            <h3>3. Mousesports</h3>
+            <div class="image-row">
+                <img src="img/frozen.avif" alt="Team 1 Photo 1">
+                <img src="img/mouz1.avif" alt="Team 1 Photo 2">
+                <img src="img/mouz2.avif" alt="Team 1 Photo 3">
+                <img src="img/mouz3.avif" alt="Team 1 Photo 4">
+                <img src="img/mouz4.avif" alt="Team 1 Photo 5">
+            </div>
+        </div>
+        <!-- Repeat for Team 2 -->
+        <!-- Repeat for Team 3 -->
+    </div>
+
+    <!-- Personal Favorite Team Section -->
+    <div class="section">
+        <h2>My Personal Favorite Team:</h2>
+        <div class="team-info">
+            <h3>2019 Team Liquid</h3>
+            <div class="image-row">
+                <img src="img/stew.webp" alt="Favorite Team Photo 1">
+                <img src="img/nitro.webp" alt="Favorite Team Photo 2">
+                <img src="img/naf.webp" alt="Favorite Team Photo 3">
+                <img src="img/twistz.avif" alt="Favorite Team Photo 4">
+                <img src="img/elige.webp" alt="Favorite Team Photo 5">
+            </div>
+            <p>When I first started following CSGO, I came across Stewie2K. Stewie2K was known as the 'Smoke Criminal' because he had tendencies to run through smoke grenades (which is usually frowned upon due to the fact that you don't know what's on the other side). Instantly trying to replicate his playstyle, I found myself following him around. He was already a legend in Cloud9 where he made a clutch kill to win Katowice. As he joined Team Liquid, I came across Elige, NAF, nitro, and Twistz (who actually made an appearance on this page!). Watching them under the covers when I was supposed to be asleep, I had spent countless nights following this team. They were entertaining, innovative, skillful, and lastly, extremely good at what they did. They won the Intel Grand Slam, and were known to be one of the best teams to ever touch the game.</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <!-- ... -->
+
+    <script>
+        $(document).ready(function(){
+          // Apply smooth scroll to all anchors
+          $('a[href*="#"]').on('click', function(e) {
+            e.preventDefault();
+    
+            $('html, body').animate({
+              scrollTop: $($(this).attr('href')).offset().top,
+            }, 500, 'linear');
+          });
+        });
+    </script>
+</body>
+</html>
